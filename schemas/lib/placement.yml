@@ -1,0 +1,6 @@
+---
+id: placement
+type: text
+label: Placement
+placeholder: auto
+options: [top, left, bottom, right]

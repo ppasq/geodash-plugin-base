@@ -1,0 +1,45 @@
+---
+controllers:
+  - GeoDashControllerBase.js
+  - GeoDashControllerModal.js
+directives:
+  - svg/ngSvgText.js
+  - svg/svg.js
+  - geodashBase.js
+  - onLinkDone.js
+  - onRepeatDone.js
+  - geodashBtnClose.js
+  - geodashBtnInfo.js
+  - geodashBtn.js
+  - geodashLabel.js
+  - geodashTab.js
+  - geodashTabs.js
+enumerations:
+  - dates.js
+templates:
+  - geodash_tab.tpl.html
+  - geodash_tabs.tpl.html
+  - geodash_btn_close.tpl.html
+  - geodash_btn_info.tpl.html
+  - geodash_btn.tpl.html
+  - geodash_label.tpl.html
+filters: []
+handlers: []
+schemas:
+  - base.yml
+  - baselayers.yml
+  - assets.yml
+  - featurelayers.yml
+  - controls.yml
+  - view.yml
+  - servers.yml
+  - pages.yml
+  - { id: css, path: lib/css.yml}
+  - { id: intent, path: lib/intent.yml}
+  - { id: intents, path: lib/intents.yml}
+  - { id: placement, path: lib/placement.yml}
+  - { id: position, path: lib/position.yml}
+  - { id: tooltip, path: lib/tooltip.yml}
+modals: []
+less:
+  - base.less

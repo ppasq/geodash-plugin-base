@@ -1,0 +1,43 @@
+---
+id: intent
+type: object
+label: Intent
+placeholder: "intent"
+required: false
+schema:
+  verbose_singular: Intent
+  fields:
+    - id: name
+      type: text
+      label: Intent Name
+      placeholder: name
+      required: true
+      description: "The intent to emit."
+      search:
+        local:
+          name: reflect
+          args:
+            locations:
+              - handlers
+    - id: properties
+      type: objectarray
+      label: Intent Properties
+      placeholder: "properties"
+      required: false
+      description: "The properties of the intent, such as layer id, location, etc."
+      schema:
+        verbose_singular: Property
+        verbose_plural: Properties
+        fields:
+          - id: name
+            type: text
+            label: Property Name
+            placeholder: "name"
+            required: true
+            description: "The name of the property."
+          - id: value
+            type: template
+            label: Property value
+            placeholder: "value"
+            required: true
+            description: "The value of the property."

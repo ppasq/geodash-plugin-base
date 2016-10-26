@@ -1,0 +1,29 @@
+---
+id: css
+type: object
+label: CSS
+schema:
+  verbose_singular: CSS
+  fields:
+    - id: properties
+      type: objectarray
+      label: Intent Additional CSS Properties
+      placeholder: "properties"
+      required: false
+      description: "The additional css properties of the intent, such as margin, padding, border, etc."
+      schema:
+        verbose_singular: Property
+        verbose_plural: Properties
+        fields:
+          - id: name
+            type: text
+            label: Property Name
+            placeholder: "name"
+            required: true
+            description: "The name of the property."
+          - id: value
+            type: template
+            label: Property value
+            placeholder: "value"
+            required: true
+            description: "The value of the property."

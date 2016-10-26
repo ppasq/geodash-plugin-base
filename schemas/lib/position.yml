@@ -1,0 +1,34 @@
+---
+id: position
+type: object
+label: Position
+placeholder: "position"
+required: false
+description: "Position of the overlay."
+schema:
+  verbose_singular: Position
+  fields:
+    - id: top
+      type: text
+      label: Position / Top
+      placeholder: auto
+      required: true
+      description: "The top position of your static overlayer (in pixels or percentage)."
+    - id: bottom
+      type: text
+      label: Position / Bottom
+      placeholder: auto
+      required: true
+      description: "The bottom position of your static overlayer (in pixels or percentage)."
+    - id: left
+      type: text
+      label: Position / Left
+      placeholder: auto
+      required: true
+      description: "The left position of your static overlayer (in pixels or percentage)."
+    - id: right
+      type: text
+      label: Position / Right
+      placeholder: auto
+      required: true
+      description: "The right position of your static overlayer (in pixels or percentage)."
