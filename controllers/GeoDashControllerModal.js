@@ -327,6 +327,10 @@ geodash.controllers.GeoDashControllerModal = function(
       {
         label = "Save "+(extract("schema.verbose_plural", t) || extract("label", t) || "Object");
       }
+      else if(t.type == "markdown" || t.type == "text" || t.type == "string" || t.type == "int" || t.type == "integer")
+      {
+        label = "Save "+(extract("label", t) || "Object");
+      }
       else
       {
         label = "Save "+(extract("schema.verbose_singular", t) || "Object");
