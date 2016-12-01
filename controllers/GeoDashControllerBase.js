@@ -140,7 +140,8 @@ geodash.controllers.GeoDashControllerBase = function(
   {
     if(angular.isDefined($scope.workspace))
     {
-      var slug = geodash.util.getScope('geodash-main')['state']['slug'];
+      var mainScope = geodash.util.getScope('geodash-main');
+      var slug = extract("state.slug", mainScope) || extract("dashboard.slug", mainScope);
       if(angular.isString(slug) && slug.length > 0)
       {
         var template = geodash.api.getEndpoint(name);
