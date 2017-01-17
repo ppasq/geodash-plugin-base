@@ -64,6 +64,9 @@ featurelayers:
           values:
             - wms
             - wmts
+        examples:
+          - "0"
+          - "3"
       - id: view.maxZoom
         type: int
         label: View / Maximum Zoom
@@ -76,6 +79,8 @@ featurelayers:
           values:
             - wms
             - wmts
+        examples:
+          - "18"
       - id: source
         type: object
         label: Source
@@ -123,12 +128,16 @@ featurelayers:
               placeholder: layers
               required: false
               description: "The wms layers of the feature layer."
+              examples:
+                - "geonode:wld_poi_facilities_wfp"
             - id: cql_filter
               type: text
               label: CQL Filter
               placeholder: "PERSONS > 15000000"
               required: false
               description: "The CQL Filter to apply to the WMS GetMap requests."
+              examples:
+                - "(facility IN (''Country Office'') AND status = ''Open'')"
             - id: url
               type: text
               label: WMS URL
@@ -137,6 +146,14 @@ featurelayers:
               description: "The url of the WMS server."
               typeahead:
                 local: "wms"
+              examples:
+                - "http://geonode.wfp.org/geoserver/wms"
+                - "http://geonode.state.gov/geoserver/wms"
+                - "http://mapstory.org/geoserver/wms"
+        examples:
+          - layers: "geonode:wld_poi_facilities_wfp"
+            cql_filter: "(facility IN ('Country Office') AND status = 'Open')"
+            url: "http://geonode.wfp.org/geoserver/wms"
       - id: "wmts.layers"
         type: text
         label: WMTS Layers

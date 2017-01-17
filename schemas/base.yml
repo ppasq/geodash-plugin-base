@@ -19,33 +19,48 @@ description:
   required: true
   description: "The generic description for the dashboard.  This is mostly used internally.  Use about or welcome for user descriptions."
 about:
-  title:
-    type: markdown
-    label: About / Title
-    placeholder: title
-    multiline: false
-    required: true
-    description: "The title for the about modal."
+  type: object
+  label: About
+  placeholder: "About"
+  required: true
+  description: "About."
+  schema:
+    verbose_singular: About
+    fields:
+      - id: title
+        type: markdown
+        label: About / Title
+        placeholder: title
+        multiline: false
+        required: true
+        description: "The title for the about modal."
 welcome:
-  title:
-    type: markdown
-    label: Welcome / Title
-    placeholder: Title
-    multiline: false
-    required: true
-    description: "The title for the welcome modal."
-  intro:
-    type: markdown
-    label: Welcome / Introduction
-    placeholder: Introduction
-    multiline: true
-    required: true
-    description: "The text (in markdown) for the default intro tab of the welcome modal."
-  about:
-    type: markdown
-    label: Welcome / About
-    placeholder: About
-    multiline: true
-    required: true
-    description: "The text (in markdown) for the about tab of the welcome modal."
-download:
+  type: object
+  label: Welcome
+  placeholder: "Welcome"
+  required: true
+  description: "Contents of welcome modal."
+  schema:
+    verbose_singular: Welcome
+    fields:
+      - id: title
+        type: markdown
+        label: Welcome / Title
+        placeholder: Title
+        multiline: false
+        required: true
+        description: "The title for the welcome modal."
+      - id: intro
+        type: markdown
+        label: Welcome / Introduction
+        placeholder: Introduction
+        multiline: true
+        required: true
+        description: "The text (in markdown) for the default intro tab of the welcome modal."
+      - id: about
+        type: markdown
+        label: Welcome / About
+        placeholder: About
+        multiline: true
+        required: true
+        description: "The text (in markdown) for the about tab of the welcome modal."

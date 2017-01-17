@@ -35,6 +35,7 @@ schemas:
   - servers.yml
   - pages.yml
   - { id: css, path: lib/css.yml}
+  - { id: link, path: lib/link.yml}
   - { id: intent, path: lib/intent.yml}
   - { id: intents, path: lib/intents.yml}
   - { id: placement, path: lib/placement.yml}
