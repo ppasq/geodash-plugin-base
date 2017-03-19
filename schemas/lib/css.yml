@@ -5,6 +5,13 @@ label: CSS
 schema:
   verbose_singular: CSS
   fields:
+    - id: classes
+      type: stringarray
+      label: Classes
+      placeholder: "classes"
+      required: true
+      description: "The additional css classes of the intent, such as text-primary, etc.  You can use Bootstrap 4 [color utility classes](https://v4-alpha.getbootstrap.com/utilities/colors/)."
+      examples: ['text-primary', 'text-danger', 'bg-inverse', 'pop']
     - id: properties
       type: objectarray
       label: Intent Additional CSS Properties
