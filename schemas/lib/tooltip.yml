@@ -4,7 +4,7 @@ type: object
 label: Tooltip
 placeholder: "tooltip"
 required: false
-description: "Tooltip"
+description: "Bootstrap tooltips.  See [http://v4-alpha.getbootstrap.com/components/tooltips/](http://v4-alpha.getbootstrap.com/components/tooltips/)."
 schema:
   verbose_singular: Tooltip
   fields:
@@ -14,6 +14,15 @@ schema:
       placeholder: auto
       required: true
       description: "The content of the tooltip."
+    - id: container
+      type: text
+      label: Tooltip / Container
+      placeholder: auto
+      required: true
+      description: "The container of the tooltip."
+      examples:
+        - "body"
+        - "#geodash-map-navbars"
     - id: placement
       type: text
       label: Tooltip / Placement

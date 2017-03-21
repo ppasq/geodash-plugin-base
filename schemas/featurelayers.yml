@@ -188,6 +188,14 @@ featurelayers:
         schema:
           verbose_singular: WFS
           fields:
+            - id: layers
+              type: text
+              label: WFS Layers
+              placeholder: layers
+              required: false
+              description: "The wfs layers of the feature layer."
+              examples:
+                - "geonode:wld_poi_facilities_wfp"
             - id: version
               type: text
               label: WFS Version

@@ -118,3 +118,13 @@ baselayers:
                 field: source.type
                 values:
                   - gwc
+  examples:
+    - id: osm
+      title: OpenStreetMap
+      description: OpenStreetMap Basemap, Standard Style
+      type: tiles
+      source:
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        name: OpenStreetMap
+      tile:
+        url: https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png
